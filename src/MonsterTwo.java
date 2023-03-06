@@ -8,8 +8,10 @@ public class MonsterTwo {
     }
     public static void redrawBoard() {
         int k = 1;
-        while (k <= 30) { System.out.print('-'); k++;}
+        while (k <= 30) {
+            System.out.print('-'); k++;}
         System.out.println();
+
         for(int i = 0; i < battleBoard.length; i++){
             for(int j =0; j< battleBoard[i].length;j++){
                 System.out.print("|" + battleBoard[i][j] + "|");
